@@ -1,0 +1,48 @@
+.expContainer {
+    margin-bottom: 30px;
+    border: 3px solid #1ea1a1;
+    border-radius: 5px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    
+}
+
+#desc {
+    text-align: left;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.subtitle {
+    text-align: right;
+    margin: 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#supplementaryInfo {
+    display: inline-block;
+    
+}
+
+#organizationName {
+    display: inline-block;
+    margin-top: 0px; 
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.websiteLink {
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+}

@@ -1,38 +1,134 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+
+* {
+  /* Applies to everything in the document */
+
+  font-family: "Poppins";
+}
+
+/* Applies to all li elements within the navbar ID */
+
+#navbar {
+  margin-left: 65%;
+}
+
+#navbar li{ 
+  display: inline;
+  padding-left: 27px;
+  margin-top: 10px;
+  font-size: larger;
+  margin-bottom: 0px;
+}
+
+
+h1 {
+  font-size: 80px;
+  font-weight: 600;
   text-align: center;
+  color: black;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  background-color: beige;
+  
+  
+  /* Alternate Color: #f5f5f5 */
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img, #portrait {
+  border: 10px solid;
+  border-color: #ffd100;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px gray;
+  margin: 10px;
+  width: 200px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p {
+  margin: 20px;
+}
+
+a {
+  margin: 10px;
+  color: black;
+}
+
+.profile_links {
+  margin: 0px;
+  color: black;
+}
+
+#interest_sections {
+  border-radius: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+
+/* Removed .list_section from this, as the list section has its own CSS File */
+.third_content_section { 
+  background-color: teal;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+}
+
+
+#entire {
+  margin: 10px;
+}
+
+#intro {
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+#flexbox {
+  display: flex;
+  background-color: red;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color:burlywood;
+  
+
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+#journal_link {
+  color: purple;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.headerTitle{
+  text-align: left;
+  font-size: larger;
+}
+
+#interestsButton {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  display: flex;
+  font-weight: 600;
+  border-radius: 5px;
+  color: black;
+  background-color: bisque;
+  padding: 0.5%;
+  font-size: medium;
 }

@@ -1,0 +1,19 @@
+.work_sample_image {
+    width: 50%;
+    height: 37%; /* 320px as an alternative */
+    
+    border: 3px solid black;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+
+}
+body {
+    margin: auto;
+}
+
+.photoContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
