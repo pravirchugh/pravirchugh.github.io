@@ -9,9 +9,10 @@ import CybersecurityIcon from './pictures/CybersecurityIcon.png'
 
 let expanded = false;
 const experiences = [
+    {name: "Stanford University Human-Centered AI", start: "June 2023", end: "September 2023", title: "Research Intern", description: "Worked with researchers and industry professionals from Stanford HAI and the Young Data Scientists League to analyze modern large language models for different types of bias.", link: "https://hai.stanford.edu/"},
     {name: "Nova for Good", start: "October 2022", end: "Present", title: "Software Developer", description: "Developer for Canopy, a platform that allows anyone, including under-resourced and distanced community members, to create their own online peer network.", link: "https://www.novaforgood.org/about"},
     {name: "ACM Hack", start: "September 2022", end: "Present", title: "Member", description: "Learned various topics in web development and applied my learnings to create this personal website.", link: "https://hack.uclaacm.com/"},
-    {name: "ACM AI", start: "September 2022", end: "Present", title: "Member", description: "Studied different concepts in AI as well as their implementations in Python.", link: "https://uclaacmai.github.io/" }
+    /*{name: "ACM AI", start: "September 2022", end: "Present", title: "Member", description: "Studied different concepts in AI as well as their implementations in Python.", link: "https://uclaacmai.github.io/" }*/
 ]
 
 function ExperienceList(){

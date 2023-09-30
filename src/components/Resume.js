@@ -1,5 +1,5 @@
 import React from "react";
-import ResumePDF from './Resume.pdf';
+import ResumePDF from './ResumeUpdated.pdf';
 
 function Resume(){
     return (
