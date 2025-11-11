@@ -1,134 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
-
-* {
-  /* Applies to everything in the document */
-
-  font-family: "Poppins";
-}
-
-/* Applies to all li elements within the navbar ID */
-
-#navbar {
-  margin-left: 65%;
-}
-
-#navbar li{ 
-  display: inline;
-  padding-left: 27px;
-  margin-top: 10px;
-  font-size: larger;
-  margin-bottom: 0px;
-}
-
-
-h1 {
-  font-size: 80px;
-  font-weight: 600;
-  text-align: center;
-  color: black;
-  padding-top: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-}
-
-html {
-  background-color: beige;
-  
-  
-  /* Alternate Color: #f5f5f5 */
-  color: black;
-}
-
-img, #portrait {
-  border: 10px solid;
-  border-color: #ffd100;
-  border-radius: 10px;
-  box-shadow: 10px 10px 5px gray;
-  margin: 10px;
-  width: 200px;
-  
-}
-
-p {
-  margin: 20px;
-}
-
-a {
-  margin: 10px;
-  color: black;
-}
-
-.profile_links {
-  margin: 0px;
-  color: black;
-}
-
-#interest_sections {
-  border-radius: 20px;
+/* Global App Styles */
+.app-container {
+  min-height: 100vh;
   display: flex;
-  flex-direction: row;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-  margin-top: 10px;
+  flex-direction: column;
 }
 
-
-/* Removed .list_section from this, as the list section has its own CSS File */
-.third_content_section { 
-  background-color: teal;
-  border-radius: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-top: 20px;
-  padding-bottom: 20px;
-  color: black;
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--gray-border);
+  padding: 1rem 2rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px var(--shadow-sm);
+  backdrop-filter: blur(10px);
 }
 
-
-#entire {
-  margin: 10px;
-}
-
-#intro {
-  text-align: center;
-  margin-top: 0px;
-  padding-top: 0px;
-}
-
-#flexbox {
+.navbar-content {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  background-color: red;
   justify-content: center;
-  background-color:burlywood;
-  
-
-  margin: 20px;
-  padding: 20px;
-  border-radius: 20px;
+  align-items: center;
+  gap: 2rem;
 }
 
-#journal_link {
-  color: purple;
+.nav-link {
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: var(--transition);
+  position: relative;
 }
 
-.headerTitle{
-  text-align: left;
-  font-size: larger;
+.nav-link:hover {
+  color: var(--accent-blue);
+  background-color: var(--gray-light);
 }
 
-#interestsButton {
-  text-align: center;
-  margin-top: 20px;
+.nav-link.active {
+  color: var(--accent-blue);
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: var(--accent-blue);
+  border-radius: 50%;
+}
+
+/* Main Content */
+.main-content {
+  margin-top: 70px;
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  vertical-align: middle;
-  display: flex;
-  font-weight: 600;
-  border-radius: 5px;
-  color: black;
-  background-color: bisque;
-  padding: 0.5%;
-  font-size: medium;
+}
+
+/* Page Container */
+.page-container {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar-content {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .main-content {
+    padding: 1.5rem 1rem;
+    margin-top: 80px;
+  }
 }

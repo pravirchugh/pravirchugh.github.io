@@ -1,62 +1,79 @@
-import './App.css'; 
-import React, {useEffect, useState} from 'react';
-import {Helmet} from 'react-helmet';
+import './App.css';
+import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
+import { BrowserRouter as Router, Routes, Route, useLocation, Link } from 'react-router-dom';
 import ExperienceList from './components/ExperienceList';
-import AboutMe from './components/AboutMe.js';
-import Resume from './components/Resume.js';
-import WorkSamples from './components/WorkSamples.js'
-// npm install react-router-dom for the below: (navigation)
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useLocation,
-  Link
-} from "react-router-dom"
-function App() {
-  
-  const colors = {
-    about: "beige",
-    garden: "burlywood",
-    experience: "bisque",
-    resume: "aqua",
-    worksamples: 'teal'
+import AboutMe from './components/AboutMe';
+import Resume from './components/Resume';
+import Publications from './components/Publications';
+import Footer from './components/Footer';
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
 }
 
-  const location = useLocation(); // location now holds the current location of the user (on our website)
-  const [navColor, setNavColor] = useState(colors.about);
+function Navigation() {
+  const location = useLocation();
+
+  const isActive = (path) => {
+    if (path === '/' && location.pathname === '/') return true;
+    if (path !== '/' && location.pathname.startsWith(path)) return true;
+    return false;
+  };
 
   return (
-    <div>
-      <Helmet>
-        <title>Pravir Chugh</title>
-      </Helmet>
-
-      <div id="entire">
-        
-        <div className='headerTitle' style={{backgroundColor: navColor}}>
-          <Link to="/">About Me</Link> {"  |  "}
-          <Link to="/experience">Experience</Link> {"  |  "}
-          <Link to="/resume">Resume</Link> {"  |  "}
-          <Link to="/worksamples">Work Samples</Link>
-          <hr style= {{height: "0.1%", backgroundColor: "black", borderColor: "black"}} />
-          
-        </div>
-
-        {/* Potential Routes listed here: */}
-        <Routes> {/* Think of Routes as a table of contents, on the mainpage! */}
-          <Route path="/" element={<AboutMe></AboutMe>}></Route>
-          <Route path="/experience" element={<ExperienceList></ExperienceList>}></Route>
-          <Route path="/resume" element={<Resume></Resume>}></Route>
-          <Route path="/worksamples" element={<WorkSamples></WorkSamples>}></Route>
-        
-        </Routes>
-          
+    <nav className="navbar">
+      <div className="navbar-content">
+        <Link to="/" className={`nav-link ${isActive('/') ? 'active' : ''}`}>
+          About Me
+        </Link>
+        <Link to="/experience" className={`nav-link ${isActive('/experience') ? 'active' : ''}`}>
+          Experience
+        </Link>
+        <Link to="/resume" className={`nav-link ${isActive('/resume') ? 'active' : ''}`}>
+          Resume
+        </Link>
+        <Link to="/publications" className={`nav-link ${isActive('/publications') ? 'active' : ''}`}>
+          Publications
+        </Link>
       </div>
-
-    </div>
-    
+    </nav>
   );
 }
-export default App;
 
+function App() {
+  return (
+    <Router>
+      <Helmet>
+        <title>Pravir Chugh - Software Engineer</title>
+        <meta name="description" content="Software Engineer specializing in AI & Systems at UCLA" />
+      </Helmet>
+      
+      <div className="app-container">
+        <ScrollToTop />
+        <Navigation />
+        
+        <main className="main-content">
+          <div className="page-container">
+            <Routes>
+              <Route path="/" element={<AboutMe />} />
+              <Route path="/experience" element={<ExperienceList />} />
+              <Route path="/resume" element={<Resume />} />
+              <Route path="/publications" element={<Publications />} />
+            </Routes>
+          </div>
+        </main>
+        
+        <Footer />
+      </div>
+    </Router>
+  );
+}
+
+export default App;

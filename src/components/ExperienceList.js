@@ -1,72 +1,70 @@
-import React, { useEffect } from "react";
-import Experience from "./Experience";
+import React from 'react';
+import Experience from './Experience';
+import './ExperienceList.css';
 
-import {useState} from "react";
-import InterestSection from './InterestSection.js'
-import SoftwareDevelopmentIcon from './pictures/SoftwareDevelopmentIcon.png'
-import ArtificialIntelligenceIcon from './pictures/ArtificialIntelligenceIcon.png'
-import CybersecurityIcon from './pictures/CybersecurityIcon.png'
-
-let expanded = false;
 const experiences = [
-    {name: "Stanford University Human-Centered AI", start: "June 2023", end: "September 2023", title: "Research Intern", description: "Worked with researchers and industry professionals from Stanford HAI and the Young Data Scientists League to analyze modern large language models for different types of bias.", link: "https://hai.stanford.edu/"},
-    {name: "Nova for Good", start: "October 2022", end: "Present", title: "Software Developer", description: "Developer for Canopy, a platform that allows anyone, including under-resourced and distanced community members, to create their own online peer network.", link: "https://www.novaforgood.org/about"},
-    {name: "ACM Hack", start: "September 2022", end: "Present", title: "Member", description: "Learned various topics in web development and applied my learnings to create this personal website.", link: "https://hack.uclaacm.com/"},
-    /*{name: "ACM AI", start: "September 2022", end: "Present", title: "Member", description: "Studied different concepts in AI as well as their implementations in Python.", link: "https://uclaacmai.github.io/" }*/
-]
+  {
+    name: 'SAP',
+    start: 'June 2024',
+    end: 'Present',
+    title: 'Software Engineering Intern (AI/ML Team)',
+    description:
+      'Contributed to large-scale procurement systems at SAP Ariba, focusing on AI-driven automation and reliability. Most recently built an orchestration platform connecting users to personalized recommendations through secure data pipelines and model workflows. Earlier, helped design real-time code summarization services and semantic search systems that improved efficiency and recall across global engineering teams.',
+    link: 'https://www.sap.com/'
+  },
+  {
+    name: 'UCLA Security Lab',
+    start: 'November 2024',
+    end: 'June 2025',
+    title: 'Research Assistant',
+    description:
+      'Developed a multi-agent LLM framework to detect software vulnerabilities in compiled binaries by analyzing execution paths and memory behavior. Achieved 92% accuracy in multi-class CWE classification and co-authored a paper submitted to ACM CCS 2025 on secure and transparent intelligent systems.',
+    link: 'https://web.cs.ucla.edu/'
+  },
+  {
+    name: 'Bruin AI @ UCLA',
+    start: 'October 2023',
+    end: 'June 2025',
+    title: 'Director of External Affairs',
+    description:
+      'Led partnerships and outreach for UCLA’s largest AI organization, connecting students with industry professionals and research mentors. Organized workshops and presentations on large language models and fine-tuning techniques for over 40 members.',
+    link: 'https://bruinaiatucla.com/'
+  },
+  {
+    name: 'Stanford University Human-Centered AI',
+    start: 'June 2023',
+    end: 'September 2023',
+    title: 'AI Research Intern',
+    description:
+      'Collaborated with researchers from Stanford HAI and the Young Data Scientists League to study bias propagation in large language models. Fine-tuned transformer architectures on GPT-4 and LLaMA outputs and analyzed over 100K generations to measure semantic bias amplification across tasks.',
+    link: 'https://hai.stanford.edu/'
+  }
+];
 
-function ExperienceList(){
-    const [expanded, setExpanded] = useState(false);
-    const [buttonText, setButtonText] = useState("More on my interests in Computer Science.")
 
-    function handleClick(){
-      setExpanded(!expanded);
+function ExperienceList() {
+  return (
+    <div className="experience-list">
+      <div className="experience-header">
+        <h1 className="page-title">Experience</h1>
+        <p className="page-subtitle">My professional journey and contributions</p>
+      </div>
 
-      if(buttonText === "More on my interests in Computer Science."){
-        setButtonText("Hide interests.")
-      } else {
-        setButtonText("More on my interests in Computer Science.");
-      }
-    }
-
-    return (
-        <>
-            <div>
-                <h2>Experience</h2>
-
-                <div style={{margin: 'auto', width: '60%'}}>
-                    {experiences.map(
-
-                        (experience) => { return <Experience name={experience.name} start={experience.start} end={experience.end} title={experience.title} description={experience.description} link={experience.link}></Experience>
-                    })}
-                </div>
-
-            </div>
-
-
-
-            <button style={{backgroundColor: "beige"}}
-                onClick={() => handleClick()} id="interestsButton"
-            >
-
-            {buttonText}
-            </button>
-
-      
-            { expanded && 
-
-                <div id="interest_sections">
-
-                    <InterestSection name={"Software Development"} link={SoftwareDevelopmentIcon} statement1={"Helping power and maintain large-scale interactions between people and the internet is very exciting to me."}></InterestSection>
-                    <InterestSection name={"Artificial Intelligence"} link={ArtificialIntelligenceIcon} statement1={""} statement2={"I hope to learn and contribute to applications of AI, including recommender systems and classification methods, in a variety of industries."}></InterestSection>      
-                    <InterestSection name={"Cybersecurity"} link={CybersecurityIcon} statement1={"I wish to ensure that our created software remains confidential, maintains its integrity, and is rightfully trusted."}></InterestSection>
-
-                </div>
-
-            }
-
-        </>
-    )
-
+      <div className="experience-timeline">
+        {experiences.map((experience, index) => (
+          <Experience
+            key={index}
+            name={experience.name}
+            start={experience.start}
+            end={experience.end}
+            title={experience.title}
+            description={experience.description}
+            link={experience.link}
+          />
+        ))}
+      </div>
+    </div>
+  );
 }
+
 export default ExperienceList;
