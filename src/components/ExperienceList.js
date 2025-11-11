@@ -31,7 +31,7 @@ const experiences = [
     link: 'https://bruinaiatucla.com/'
   },
   {
-    name: 'Stanford University Human-Centered AI',
+    name: 'Stanford University Human-Centered Artificial Intelligence (HAI)',
     start: 'June 2023',
     end: 'September 2023',
     title: 'AI Research Intern',

@@ -1,23 +1,41 @@
 import React from 'react';
 import './Publications.css';
 
-// Sample publications data - replace with your actual publications
 const publications = [
   {
-    title: 'Analyzing Bias in Large Language Models',
-    summary: 'Research on identifying and mitigating different types of bias in modern LLMs, conducted during my internship at Stanford HAI.',
-    tags: ['AI', 'Research', 'Bias'],
-    link: '#',
-    date: 'September 2023'
+    title: 'LLM-Based Vulnerability Detection for Binary Programs',
+    summary:
+      'Research conducted at the UCLA Security Lab on using multi-agent large language models to detect software vulnerabilities in binary executables without access to source code. Achieved high accuracy in CWE classification and proposed a scalable framework for automated vulnerability analysis.',
+    tags: ['AI', 'Security', 'Research'],
+    link: 'https://arxiv.org/abs/2505.22010',
+    date: 'May 2025'
   },
   {
-    title: 'Building Scalable Web Applications',
-    summary: 'Reflections on developing large-scale systems and best practices for modern web development.',
-    tags: ['Software Engineering', 'Web Development'],
-    link: '#',
-    date: 'Coming Soon'
+    title: 'Measuring and Mitigating Bias in Large Language Models',
+    summary:
+      'Study from my research internship at Stanford HAI, analyzing bias propagation in modern transformer models. The work evaluated GPT-4 and LLaMA outputs to quantify semantic bias amplification and proposed methods for more transparent, fair AI systems.',
+    tags: ['AI', 'Ethics', 'Research'],
+    link: 'https://arxiv.org/abs/2404.07475',
+    date: 'April 2024'
+  },
+  {
+    title: 'Game Theory and Flight Bookings',
+    summary:
+      'An exploration of how concepts from game theory can explain airline pricing strategies and passenger decision-making, blending mathematics and behavioral economics to understand real-world market dynamics.',
+    tags: ['Mathematics', 'Economics', 'Game Theory'],
+    link: 'https://blog.wastudentmath.org/index.php/game-theory-and-flight-bookings/',
+    date: 'February 2022'
+  },
+  {
+    title: 'The Intersection of Mathematics and Computer Science',
+    summary:
+      'A perspective piece on how mathematical reasoning underpins algorithm design, computational efficiency, and problem-solving in computer science education and research.',
+    tags: ['Mathematics', 'Computer Science', 'Education'],
+    link: 'https://blog.wastudentmath.org/index.php/the-intersection-of-mathematics-and-computer-science/',
+    date: 'January 2022'
   }
 ];
+
 
 function Publications() {
   return (
