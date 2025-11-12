@@ -12,7 +12,7 @@ function AboutMe() {
             <h1 className="hero-name">Pravir Chugh</h1>
             <p className="hero-tagline">Software Engineer · AI & Systems · UCLA</p>
             <p className="hero-intro">
-            Hi there! I’m Pravir, a Computer Science student at UCLA focused on turning great ideas into software that people rely on. 
+            I'm a Computer Science student at UCLA focused on turning great ideas into software that people rely on. 
             I care about building systems that last and learning from every step of the development process.
             </p>
             <div className="hero-buttons">
