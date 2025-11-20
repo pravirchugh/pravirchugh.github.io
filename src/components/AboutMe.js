@@ -10,11 +10,10 @@ function AboutMe() {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-name">Pravir Chugh</h1>
-            <p className="hero-tagline">Software Engineer · AI & Systems · UCLA</p>
-            <p className="hero-intro">
-            I'm a Computer Science student at UCLA focused on turning great ideas into software that people rely on. 
-            I care about building systems that last and learning from every step of the development process.
+            <p className="hero-statement">
+              I build reliable AI systems and infrastructure designed to last.
             </p>
+            <p className="hero-tagline">AI/ML Engineer · SAP · UCLA</p>
             <div className="hero-buttons">
               <a 
                 href="https://www.linkedin.com/in/pravirchugh" 
@@ -50,36 +49,53 @@ function AboutMe() {
       <section className="about-content">
         <div className="about-section">
           <h2 className="section-title">About Me</h2>
-          <div className="about-grid">
-            <div className="about-text">
+          <div className="about-text">
             <p>
-              I’m a developer who enjoys building software that’s <b>dependable, secure, and built to last</b>. 
-              I’m especially interested in how AI can make software more intuitive and scalable while creating
-               real-world impact that improves how people work and interact with technology.
+              Three weeks before I was supposed to leave Seattle for UCLA, I lost my father. He was the person who first made engineering 
+              feel exciting and meaningful. I was eighteen, and suddenly given a choice everyone thought they already knew the answer to: 
+              delay school, stay close to home, and avoid upheaval during the hardest moment of my life.
             </p>
 
             <p>
-              Currently, I’m an <b>AI and software engineering intern at SAP</b>, where I work on 
-              large-scale procurement systems. Most recently, I built an orchestration platform 
-              that connects users to personalized recommendations through secure data pipelines and model workflows. 
-              I’ve also spent time at <b>Stanford’s Institute for Human-Centered AI</b> and the <b>UCLA Security Lab</b>, 
-              exploring how intelligent systems can be made safer and more transparent.
+              Most people told me not to go.
             </p>
 
             <p>
-              Outside of coding, I’m usually doing something active like calisthenics, hiking, or finding new places to explore around LA. 
-              I also enjoy traveling, most recently to Switzerland, and hope to see as much of the world as I can someday.
+              I went anyway. Not because it was easy, but because I knew who I wanted to become, and I wasn't willing to pause my future.
             </p>
-            </div>
-            <div className="about-interests">
-              <h3 className="interests-title">Interests</h3>
-              <ul className="interests-list">
-                <li>Software Development</li>
-                <li>Artificial Intelligence</li>
-                <li>Large-Scale Systems</li>
-                <li>Cybersecurity</li>
-              </ul>
-            </div>
+
+            <p>
+              That decision defined everything that came next. It taught me resilience, self-direction, and how to keep moving forward 
+              even when circumstances are far from ideal. It also shaped my engineering philosophy: build with intention, build things 
+              that last, and build systems that hold up under pressure.
+            </p>
+
+            <p>
+              Since then, my work has focused on <b>AI systems and infrastructure</b>. Not just models, but orchestration, pipelines, 
+              deployment layers, and the reliability guarantees that make intelligent systems real, usable, and scalable. I am especially 
+              interested in the intersection of <b>AI, distributed computing, and high-performance infrastructure</b>, where every engineering 
+              decision compounds into meaningful capability.
+            </p>
+
+            <p>
+              Over the next year, I'm looking for opportunities to help build the next generation of AI compute: systems that accelerate how 
+              models are trained, deployed, and used at scale. I want to work where the engineering challenges are tough, the performance stakes 
+              are high, and the impact lasts.
+            </p>
+
+            <p>
+              If you're learning, building, or pushing yourself forward wherever you are in the journey, I'd love to connect.
+            </p>
+          </div>
+
+          <div className="about-interests">
+            <h3 className="interests-title">Interests</h3>
+            <ul className="interests-list">
+              <li>Software Development</li>
+              <li>Artificial Intelligence</li>
+              <li>Large-Scale Systems</li>
+              <li>Cybersecurity</li>
+            </ul>
           </div>
         </div>
       </section>
