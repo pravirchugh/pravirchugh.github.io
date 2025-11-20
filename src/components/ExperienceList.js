@@ -7,10 +7,10 @@ const experiences = [
     name: 'SAP',
     start: 'June 2024',
     end: 'Present',
-    title: 'Software Engineering Intern (AI/ML Team)',
+    title: 'AI/ML Intern',
     description:
       'Contributed to large-scale procurement systems at SAP Ariba, focusing on AI-driven automation and reliability. Most recently built an orchestration platform connecting users to personalized recommendations through secure data pipelines and model workflows. Earlier, helped design real-time code summarization services and semantic search systems that improved efficiency and recall across global engineering teams.',
-    link: 'https://www.sap.com/'
+    link: '/sap'
   },
   {
     name: 'UCLA Security Lab',
@@ -19,7 +19,7 @@ const experiences = [
     title: 'Research Assistant',
     description:
       'Developed a multi-agent LLM framework to detect software vulnerabilities in compiled binaries by analyzing execution paths and memory behavior. Achieved 92% accuracy in multi-class CWE classification and co-authored a paper submitted to ACM CCS 2025 on secure and transparent intelligent systems.',
-    link: 'https://web.cs.ucla.edu/'
+    link: 'https://www.ytian.info/research'
   },
   {
     name: 'Bruin AI @ UCLA',
@@ -28,7 +28,7 @@ const experiences = [
     title: 'Director of External Affairs',
     description:
       'Led partnerships and outreach for UCLA’s largest AI organization, connecting students with industry professionals and research mentors. Organized workshops and presentations on large language models and fine-tuning techniques for over 40 members.',
-    link: 'https://bruinaiatucla.com/'
+    link: 'https://bruinai.org/'
   },
   {
     name: 'Stanford University Human-Centered Artificial Intelligence (HAI)',

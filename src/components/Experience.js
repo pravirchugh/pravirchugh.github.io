@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Experience.css';
 
 function Experience({ name, start, end, title, description, link }) {
@@ -7,9 +8,15 @@ function Experience({ name, start, end, title, description, link }) {
       <div className="exp-heading">
         <h3 className="organization-name">
           {link ? (
-            <a href={link} target="_blank" rel="noopener noreferrer" className="website-link">
-              {name}
-            </a>
+            link.startsWith('/') ? (
+              <Link to={link} className="website-link">
+                {name}
+              </Link>
+            ) : (
+              <a href={link} target="_blank" rel="noopener noreferrer" className="website-link">
+                {name}
+              </a>
+            )
           ) : (
             name
           )}

@@ -1,0 +1,143 @@
+.projects-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+.projects-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projects-header h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+.projects-intro {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+}
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.projects-section-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.75rem;
+}
+
+.project-card {
+  border: 1px solid var(--gray-border);
+  border-radius: 16px;
+  background: var(--bg-primary);
+  box-shadow: 0 10px 20px var(--shadow-sm);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  height: 100%;
+}
+
+.project-card.has-media {
+  padding: 1.25rem;
+}
+
+.project-card-media {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--gray-light);
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.75rem;
+}
+
+.project-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+}
+
+.project-card-text h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.project-tagline {
+  font-size: 0.92rem;
+  color: var(--accent-blue);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project-description {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: auto;
+  justify-content: flex-start;
+}
+
+.project-link-button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  transition: var(--transition);
+}
+
+.project-link-button:hover {
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+}
+
+@media (max-width: 768px) {
+  .projects-page {
+    gap: 2rem;
+  }
+
+  .project-card-media {
+    min-height: 120px;
+  }
+}
+
