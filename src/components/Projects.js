@@ -21,18 +21,18 @@ const projects = [
   },
   {
     title: 'UpVoice',
-    tagline: 'LA Hacks 2024 · Civic AI',
+    tagline: 'LA Hacks 2024 · Full-Stack + NLP',
     description:
-      'To fit the Civic AI theme at LA Hacks, UpVoice let consumers share grievances about a company with its biggest shareholders, while AI grouped, prioritized, and surfaced the strongest stories. I built the similarity, impact, and urgency models plus concise reporting flows with Vue.js, Flask, MongoDB, SendGrid, and Gemini APIs.',
+      'A platform for submitting and reviewing feedback about companies. I built the backend, including the API layer, data handling, and automated email delivery using Gemini and SendGrid. The goal was to make submissions easy to send, store, and communicate reliably.',
     links: [{ label: 'GitHub', href: 'https://github.com/pravirchugh/UpVoice' }],
     image: null
   },
   {
-    title: 'Uncloseted',
-    tagline: 'QWERHacks 2023 · Best Impact',
+    title: 'Interactive Healthy Food Map',
+    tagline: 'Nova - Tech for Good · Frontend Development',
     description:
-      'Uncloseted connected LGBTQ+ affirming healthcare providers with patients seeking safe care. I built the search and provider flows that highlighted specialties, locations, and communities served, helping the project earn the Best Impact Award.',
-    links: [{ label: 'GitHub', href: 'https://github.com/pravirchugh/uncloseted' }],
+      'Built the mapping UI for an interactive tool created with the nonprofit Los Angeles Food Policy Council to help residents locate fresh food access points and community resources. I pair-programmed the interface and focused on making the map reliable, intuitive, and usable for real community needs.',
+    links: [{ label: 'GitHub', href: 'https://github.com/novaforgood/Good-Food-LA' }],
     image: null
   },
   {
