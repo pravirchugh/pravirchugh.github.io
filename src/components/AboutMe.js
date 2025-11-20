@@ -10,11 +10,10 @@ function AboutMe() {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-name">Pravir Chugh</h1>
-            <p className="hero-tagline">Software Engineer · AI & Systems · UCLA</p>
-            <p className="hero-intro">
-            I'm a Computer Science student at UCLA focused on turning great ideas into software that people rely on. 
-            I care about building systems that last and learning from every step of the development process.
+            <p className="hero-statement">
+              I build reliable AI systems and infrastructure designed to last.
             </p>
+            <p className="hero-tagline">AI/ML Engineer · SAP · UCLA</p>
             <div className="hero-buttons">
               <a 
                 href="https://www.linkedin.com/in/pravirchugh" 

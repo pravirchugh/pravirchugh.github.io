@@ -29,17 +29,18 @@
   line-height: 1.2;
 }
 
+.hero-statement {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.4;
+}
+
 .hero-tagline {
   font-size: 1.25rem;
   color: var(--text-secondary);
   font-weight: 400;
-  margin: 0;
-}
-
-.hero-intro {
-  font-size: 1.1rem;
-  color: var(--text-primary);
-  line-height: 1.8;
   margin: 0;
 }
 
@@ -195,11 +196,11 @@
     text-align: center;
   }
 
-  .hero-tagline {
+  .hero-statement {
     text-align: center;
   }
 
-  .hero-intro {
+  .hero-tagline {
     text-align: center;
   }
 
@@ -225,12 +226,12 @@
     font-size: 2rem;
   }
 
-  .hero-tagline {
+  .hero-statement {
     font-size: 1.1rem;
   }
 
-  .hero-intro {
-    font-size: 1rem;
+  .hero-tagline {
+    font-size: 1.1rem;
   }
 
   .about-section {
