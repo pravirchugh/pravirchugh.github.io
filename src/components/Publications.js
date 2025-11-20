@@ -3,6 +3,14 @@ import './Publications.css';
 
 const publications = [
   {
+    title: 'Patent Pending: AI-Assisted Code Retrieval and Generation System',
+    summary:
+      'A patent-pending approach designed to improve developer workflows across large enterprise codebases. The system combines semantic search, structural context extraction, and iterative generation to enable faster code understanding, retrieval, and assisted development.',
+    tags: ['Patent', 'AI', 'Software Engineering'],
+    link: '#',
+    date: 'Filed 2025'
+  },
+  {
     title: 'LLM-Based Vulnerability Detection for Binary Programs',
     summary:
       'Research conducted at the UCLA Security Lab on using multi-agent large language models to detect software vulnerabilities in binary executables without access to source code. Achieved high accuracy in CWE classification and proposed a scalable framework for automated vulnerability analysis.',
