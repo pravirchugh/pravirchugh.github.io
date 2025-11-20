@@ -47,7 +47,7 @@ const projects = [
     title: 'Random Walks, Node Embeddings, and GNNs',
     tagline: 'CS 145 Final Project · Graph Learning',
     description:
-      'In my Data Mining course, my group and I explored graph representation learning with LINE, DeepWalk, Node2Vec, along with GCN, GraphSAGE, and GIN variants. We compared how each approach captured structure on citation and molecular datasets, balancing speed, expressiveness, and stability.',
+      'In my Data Mining course, my group and I explored graph representation learning with LINE, DeepWalk, Node2Vec, along with GCN, GraphSAGE, and GIN variants. We compared how each approach captured structure on different datasets and balanced latency, expressiveness, and stability.',
     links: [],
     image: null
   }
