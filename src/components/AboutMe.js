@@ -51,42 +51,42 @@ function AboutMe() {
           <h2 className="section-title">About Me</h2>
           <div className="about-text">
             <p>
-              Three weeks before I was supposed to leave Seattle for UCLA, I lost my father. He was the person who first made engineering 
-              feel exciting and meaningful. I was eighteen, and suddenly given a choice everyone thought they already knew the answer to: 
-              delay school, stay close to home, and avoid upheaval during the hardest moment of my life.
+              Three weeks before I was supposed to leave Seattle for UCLA, I lost my father in a tragic incident. 
+              He was the person who first made engineering feel exciting, meaningful, and full of possibility. 
+              I was eighteen and facing the hardest moment of my life, while everyone encouraged me to delay school 
+              for a year and stay home.
             </p>
 
             <p>
-              Most people told me not to go.
+              But I pressed on. Not because it was easy, but because I knew who my father wanted me to become.
             </p>
 
             <p>
-              I went anyway. Not because it was easy, but because I knew who I wanted to become, and I wasn't willing to pause my future.
+              That decision defined everything that came next. It taught me resilience, self-direction, and 
+              how to keep moving forward even when circumstances are far from ideal. It also shaped my engineering 
+              philosophy: build with intention, build things that last, and build systems that hold up under pressure.
             </p>
 
             <p>
-              That decision defined everything that came next. It taught me resilience, self-direction, and how to keep moving forward 
-              even when circumstances are far from ideal. It also shaped my engineering philosophy: build with intention, build things 
-              that last, and build systems that hold up under pressure.
-            </p>
-
-            <p>
-              Since then, my work has focused on <b>AI systems and infrastructure</b>. Not just models, but orchestration, pipelines, 
-              deployment layers, and the reliability guarantees that make intelligent systems real, usable, and scalable. I am especially 
-              interested in the intersection of <b>AI, distributed computing, and high-performance infrastructure</b>, where every engineering 
+              Since then, my work has focused on <b>AI systems and infrastructure</b>. Not just models, but 
+              orchestration, pipelines, deployment layers, and the reliability guarantees that make intelligent 
+              systems real, usable, and scalable. I am especially interested in the intersection of 
+              <b> AI, distributed computing, and high-performance infrastructure</b>, where every engineering 
               decision compounds into meaningful capability.
             </p>
 
             <p>
-              Over the next year, I'm looking for opportunities to help build the next generation of AI compute: systems that accelerate how 
-              models are trained, deployed, and used at scale. I want to work where the engineering challenges are tough, the performance stakes 
-              are high, and the impact lasts.
+              Over the next year, I’m looking for opportunities to help build the next generation of AI compute: 
+              systems that accelerate how models are trained, deployed, and used at scale. I'm drawn to roles where 
+              the engineering challenges are difficult, the performance stakes are high, and the impact lasts.
             </p>
 
             <p>
-              If you're learning, building, or pushing yourself forward wherever you are in the journey, I'd love to connect.
+              If you’re learning, building, or pushing yourself forward wherever you are in your journey, 
+              I’d be happy to connect.
             </p>
           </div>
+
 
           <div className="about-interests">
             <h3 className="interests-title">Interests</h3>
