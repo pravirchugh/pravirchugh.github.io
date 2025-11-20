@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { BrowserRouter as Router, Routes, Route, useLocation, Link } from 'react-router-dom';
 import ExperienceList from './components/ExperienceList';
@@ -9,6 +9,7 @@ import Publications from './components/Publications';
 import SapPage from './components/SapPage';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import { ChevronDown } from 'lucide-react';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -22,11 +23,21 @@ function ScrollToTop() {
 
 function Navigation() {
   const location = useLocation();
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const isActive = (path) => {
     if (path === '/' && location.pathname === '/') return true;
     if (path !== '/' && location.pathname.startsWith(path)) return true;
     return false;
+  };
+
+  useEffect(() => {
+    setIsDropdownOpen(false);
+  }, [location.pathname]);
+
+  const handleDropdownToggle = (event) => {
+    event.preventDefault();
+    setIsDropdownOpen((prev) => !prev);
   };
 
   return (
@@ -35,14 +46,30 @@ function Navigation() {
         <Link to="/" className={`nav-link ${isActive('/') ? 'active' : ''}`}>
           About Me
         </Link>
-        <Link to="/sap" className={`nav-link ${isActive('/sap') ? 'active' : ''}`}>
-          SAP
-        </Link>
+        <div
+          className={`nav-item dropdown ${isDropdownOpen ? 'open' : ''}`}
+          onMouseEnter={() => setIsDropdownOpen(true)}
+          onMouseLeave={() => setIsDropdownOpen(false)}
+        >
+          <Link to="/experience" className={`nav-link ${isActive('/experience') ? 'active' : ''}`}>
+            Experience
+          </Link>
+          <button
+            type="button"
+            className="dropdown-toggle"
+            aria-label="Toggle Experience menu"
+            onClick={handleDropdownToggle}
+          >
+            <ChevronDown size={16} />
+          </button>
+          <div className="dropdown-menu">
+            <Link to="/sap" className="dropdown-link">
+              My Work @ SAP
+            </Link>
+          </div>
+        </div>
         <Link to="/projects" className={`nav-link ${isActive('/projects') ? 'active' : ''}`}>
           Projects
-        </Link>
-        <Link to="/experience" className={`nav-link ${isActive('/experience') ? 'active' : ''}`}>
-          Experience
         </Link>
         <Link to="/resume" className={`nav-link ${isActive('/resume') ? 'active' : ''}`}>
           Resume

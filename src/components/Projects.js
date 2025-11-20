@@ -4,6 +4,14 @@ import './Projects.css';
 
 const projects = [
   {
+    title: 'Leo: AI Fitness Coach',
+    tagline: 'Creative Labs · Lead AI/ML Engineer',
+    description:
+      'Leo was an AI-powered fitness coach that generated personalized workout plans and motivational messages based on user goals and activity data. I led a small AI/ML team, fine-tuned a Llama 2 model with a consistent coach persona, and deployed it into the TypeScript backend, enabling real conversations in the app.',
+    links: [],
+    image: null
+  },
+  {
     title: 'StudentScholar',
     tagline: 'Developer Lead · Full stack platform',
     description:
@@ -17,14 +25,6 @@ const projects = [
     description:
       'To fit the Civic AI theme at LA Hacks, UpVoice let consumers share grievances about a company with its biggest shareholders, while AI grouped, prioritized, and surfaced the strongest stories. I built the similarity, impact, and urgency models plus concise reporting flows with Vue.js, Flask, MongoDB, SendGrid, and Gemini APIs.',
     links: [{ label: 'GitHub', href: 'https://github.com/pravirchugh/UpVoice' }],
-    image: null
-  },
-  {
-    title: 'Essay Echo',
-    tagline: 'Hack on the Hill 2024 · Essay reuse',
-    description:
-      'Essay Echo helped students reuse college essays by finding thematic overlap with embeddings and clustering. Users uploaded drafts, saw similarity scores, and learned which passages could be repurposed, easing the load for first gen and underserved applicants.',
-    links: [{ label: 'GitHub', href: 'https://github.com/pravirchugh/Essay-Echo' }],
     image: null
   },
   {
