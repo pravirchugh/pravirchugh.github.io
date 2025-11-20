@@ -60,14 +60,54 @@
   box-shadow: 0 10px 20px var(--shadow-sm);
 }
 
-.sap-entry h3 {
-  font-size: 1.1rem;
+.sap-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   margin-bottom: 0.75rem;
+}
+
+.sap-section-heading svg {
+  flex-shrink: 0;
+  color: var(--accent-blue);
 }
 
 .sap-entry p {
   color: var(--text-secondary);
   line-height: 1.7;
+}
+
+.sap-entry h3 {
+  font-size: 1.1rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-header {
+  margin-bottom: 0;
+}
+
+.project-summary {
+  font-size: 0.98rem;
+}
+
+.project-details summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent-blue);
+  list-style: none;
+}
+
+.project-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-details p {
+  margin-top: 0.75rem;
 }
 
 @media (max-width: 768px) {
