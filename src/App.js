@@ -6,6 +6,7 @@ import ExperienceList from './components/ExperienceList';
 import AboutMe from './components/AboutMe';
 import Resume from './components/Resume';
 import Publications from './components/Publications';
+import SapPage from './components/SapPage';
 import Footer from './components/Footer';
 
 function ScrollToTop() {
@@ -36,6 +37,9 @@ function Navigation() {
         <Link to="/experience" className={`nav-link ${isActive('/experience') ? 'active' : ''}`}>
           Experience
         </Link>
+        <Link to="/sap" className={`nav-link ${isActive('/sap') ? 'active' : ''}`}>
+          SAP Ariba
+        </Link>
         <Link to="/resume" className={`nav-link ${isActive('/resume') ? 'active' : ''}`}>
           Resume
         </Link>
@@ -64,6 +68,7 @@ function App() {
             <Routes>
               <Route path="/" element={<AboutMe />} />
               <Route path="/experience" element={<ExperienceList />} />
+              <Route path="/sap" element={<SapPage />} />
               <Route path="/resume" element={<Resume />} />
               <Route path="/publications" element={<Publications />} />
             </Routes>
