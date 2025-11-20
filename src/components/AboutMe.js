@@ -11,7 +11,7 @@ function AboutMe() {
           <div className="hero-text">
             <h1 className="hero-name">Pravir Chugh</h1>
             <p className="hero-statement">
-              I build reliable AI systems and infrastructure designed to last.
+              I care about building intelligent systems that are reliable by design and adaptive by nature.
             </p>
             <p className="hero-tagline">AI/ML Engineer · SAP · UCLA</p>
             <div className="hero-buttons">
@@ -48,8 +48,12 @@ function AboutMe() {
       {/* About Content */}
       <section className="about-content">
         <div className="about-section">
-          <h2 className="section-title">About Me</h2>
+          <h2 className="section-title">My Story</h2>
           <div className="about-text">
+            <p>
+              My engineering journey is a personal one.
+            </p>
+            
             <p>
               Three weeks before I was supposed to leave Seattle for UCLA, I lost my father in a tragic incident. 
               He was the person who first made engineering feel exciting, meaningful, and full of possibility. 
